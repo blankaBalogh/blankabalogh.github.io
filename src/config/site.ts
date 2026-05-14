@@ -1,10 +1,11 @@
 import type { SiteConfig, ThemeConfig, SettingsConfig, UmamiAnalyticsConfig, AnalyticsConfig } from "../types";
 
 export const SITE: SiteConfig = {
-    website: "https://shannon.github.io/academic-portfolio-astro/",
+    website: "https://blankabalogh.github.io/",
     author: "Blanka Balogh",
     desc: "Personal academic portfolio and blog of Blanka Balogh",
     title: "Blanka Balogh",
+    ogImage: "shannon.webp",
     postPerPage: 5,
     favicon: "/favicon.svg",
     lang: "en",

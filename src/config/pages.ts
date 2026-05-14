@@ -14,31 +14,31 @@ export const PAGES: PagesConfig = {
     publications: {
         title: "Publications",
         subtitle: "A collection of research papers and scientific articles.",
-        isActive: true,
+        isActive: false,
     },
     talks: {
         title: "Talks & Presentations",
         subtitle: "Public lectures, colloquia, and conference presentations.",
-        isActive: true,
+        isActive: false,
     },
     projects: {
         title: "Code & Projects",
         subtitle: "Open source contributions and technological experiments.",
-        isActive: true,
+        isActive: false,
     },
     teaching: {
         title: "Teaching",
         subtitle: "Academic courses and educational materials.",
-        isActive: true,
+        isActive: false,
     },
     tags: {
         title: "Tags",
         subtitle: "Explore content by topic.",
-        isActive: true,
+        isActive: false,
     },
     cv: {
         title: "Curriculum Vitae",
         subtitle: "Academic and professional history.",
-        isActive: true,
+        isActive: false,
     },
 };
