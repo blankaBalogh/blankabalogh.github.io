@@ -8,7 +8,7 @@ export const PAGES: PagesConfig = {
     },
     blog: {
         title: "Blog",
-        subtitle: "Thoughts on physics, philosophy, and music.",
+        subtitle: "",
         isActive: true,
     },
     publications: {
@@ -34,7 +34,7 @@ export const PAGES: PagesConfig = {
     tags: {
         title: "Tags",
         subtitle: "Explore content by topic.",
-        isActive: false,
+        isActive: true,
     },
     cv: {
         title: "Curriculum Vitae",
