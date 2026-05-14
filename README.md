@@ -1,63 +1,120 @@
-# Astro Starter Kit: Blog
+# 🎓 Academic Portfolio Astro
 
-```sh
-npm create astro@latest -- --template blog
+[![Astro](https://img.shields.io/badge/ASTRO-FF5D01?style=for-the-badge&logo=astro&logoColor=white)](https://astro.build/)
+[![Tailwind](https://img.shields.io/badge/TAILWIND-06B6D4?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![License](https://img.shields.io/badge/MIT-44CC11?style=for-the-badge)](https://opensource.org/license/mit)
+
+![Page Screenshot](public/main_page.jpg)
+
+A fast, minimalist, and highly customizable Astro template designed specifically for researchers, professors, PhD students, and academics. 
+
+Strongly inspired by [Academic Pages](https://github.com/academicpages/academicpages.github.io) and [AstroPaper](https://github.com/satnaing/astro-paper), this template prioritizes content readability, SEO discoverability, and ease of configuration without touching the UI code.
+
+> 🌟 **[View the Live Demo](https://astro-academics-page.vercel.app/)**
+
+## ✨ Features
+
+- **Markdown-Driven Collections:** Easily manage your `Bio`, `Blog`, `Publications`, `Projects`, `Talks`, `CV`, and `Teaching` experience purely through `.md` files, **no programming knowledge required**.
+- **Academic Standard Support:** Out-of-the-box $\LaTeX$ rendering support via `remark-math`/`rehype-katex`.
+- **Extensive Theming System:** Built-in Light/Dark mode toggle with a highly customizable underlying design system and several preset color palettes.
+- **Toggleable Sections:** Don't need a "Talks" or "Teaching" section? Disable them globally with a single boolean flag in your config.
+- **Peak Performance:** Built with Astro and Tailwind CSS v4 (via `@tailwindcss/vite`), yielding near-perfect Lighthouse scores and minimal client-side JavaScript.
+- **Analytics:** Includes native configuration options for self-hosted Umami analytics (`umami.websiteId`), as well as GA4 support (`ga4Id`).
+- **Two-Column Architecture:** Optimized layout with a sticky left profile sidebar and a scrollable main content area.
+
+## 🚀 Getting Started
+
+### 1. Bootstrap the Repository
+
+**Via GitHub CLI (Recommended):**
+```bash
+gh repo create my-portfolio --template="rubzip/academic-portfolio-astro" --clone
+cd my-portfolio
 ```
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+**Via Standard Git:**
+```bash
+git clone https://github.com/rubzip/academic-portfolio-astro.git my-portfolio
+cd my-portfolio
+```
 
-Features:
+### 2. Install Dependencies
+This project uses Node.js (requires **Node.js >= 22.12.0**).
+```bash
+npm install
+```
 
-- ✅ Minimal styling (make it your own!)
-- ✅ 100/100 Lighthouse performance
-- ✅ SEO-friendly with canonical URLs and Open Graph data
-- ✅ Sitemap support
-- ✅ RSS Feed support
-- ✅ Markdown & MDX support
+### 3. Start Development Server
+```bash
+npm run dev
+```
+Your local server will start at `http://localhost:4321`.
 
-## 🚀 Project Structure
+## 📂 Architecture & Structure
 
-Inside of your Astro project, you'll see the following folders and files:
+This project follows a centralized configuration architecture and is driven entirely by Markdown/MDX content.
 
 ```text
-├── public/
+/
+├── public/                 # Static assets (images, favicon, robots.txt)
 ├── src/
-│   ├── assets/
-│   ├── components/
-│   ├── content/
-│   ├── layouts/
-│   └── pages/
-├── astro.config.mjs
-├── README.md
-├── package.json
-└── tsconfig.json
+│   ├── assets/             # Global icons (`icons.ts`)
+│   ├── components/         # Reusable Astro UI components (Tailwind classes used for styling)
+│   ├── config/             # ⚙️ ALL GLOBAL CONFIGURATION LIVES HERE
+│   │   ├── site.ts         # Meta details & Analytics (SITE, THEME_CONFIG, SETTINGS)
+│   │   ├── pages.ts        # Enable/Disable sections & subtitles (PAGES)
+│   │   ├── themes.ts       # Color palettes
+│   │   ├── navigation.ts   # Navbar links (NAV_LINKS)
+│   │   └── social.ts       # Social media links (SOCIALS)
+│   ├── content/            # 📝 ALL MARKDOWN CONTENT LIVES HERE
+│   │   ├── bio.md
+│   │   ├── cv.md
+│   │   ├── posts/
+│   │   ├── projects/
+│   │   ├── publications/
+│   │   ├── talks/
+│   │   └── teaching/
+│   ├── layouts/            # Page layout wrappers
+│   ├── pages/              # Astro routing
+│   ├── styles/             # Global CSS (`global.css` - Theme colors, base styles)
+│   └── types/              # TypeScript interfaces (content, display, config, themes)
+└── content.config.ts       # Zod schemas for all markdown collections
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+## 📖 Documentation & Setup
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+For a comprehensive, step-by-step guide on how to configure your site, modify the design, and write new content, please refer to the dedicated setup post included in this template:
 
-The `src/content/` directory contains "collections" of related Markdown and MDX documents. Use `getCollection()` to retrieve posts from `src/content/blog/`, and type-check your frontmatter using an optional schema. See [Astro's Content Collections docs](https://docs.astro.build/en/guides/content-collections/) to learn more.
+**👉 [Setting up Your Academic Portfolio](src/content/posts/setting-up-portfolio.md)**
 
-Any static assets, like images, can be placed in the `public/` directory.
 
-## 🧞 Commands
+## 📋 Configuration
 
-All commands are run from the root of the project, from a terminal:
+All configuration is managed centrally in the `src/config` directory. Modify these files to personalize your portfolio without touching any UI code:
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+| File | Purpose |
+| :--- | :--- |
+| [`pages.ts`](src/config/pages.ts) | Enable/disable entire sections (e.g., `talks`, `teaching`) and set page subtitles. |
+| [`themes.ts`](src/config/themes.ts) | Define and manage all color palettes. Use `THEME_CONFIG` in `site.ts` to apply. |
+| [`site.ts`](src/config/site.ts) | Manage metadata, analytics keys (Umami/GA4), and critical file paths. |
+| [`navigation.ts`](src/config/navigation.ts) | Define the primary navigation bar links. |
+| [`social.ts`](src/config/social.ts) | Configure social media links appearing in the footer and header. |
 
-## 👀 Want to learn more?
 
-Check out [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+## 🛠️ Build Commands
 
-## Credit
+All standard build commands run through `npm`:
 
-This theme is based off of the lovely [Bear Blog](https://github.com/HermanMartinus/bearblog/).
+| Command | Action |
+| :--- | :--- |
+| `npm run dev` | Starts the local development server on `localhost:4321` |
+| `npm run build` | Builds your project for production output into `./dist/` |
+| `npm run preview` | Previews your production build locally |
+| `npm run format` | Runs Prettier on all files to format code |
+
+## 🤝 Contributing & License
+
+Contributions, issues, and feature requests are always welcome! Feel free to check the [issues page](https://github.com/rubzip/academic-portfolio-astro/issues).
+
+This project is licensed under the **MIT License** - see the `LICENSE` file for details.
