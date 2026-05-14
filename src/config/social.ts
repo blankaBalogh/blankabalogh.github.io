@@ -31,6 +31,12 @@ export const SOCIALS: SocialLink[] = [
         linkTitle: `LinkedIn`,
         isActive: true,
     },
+    {
+        name: "CV",
+        href: "/cv_balogh_may26.pdf",
+        linkTitle: "Download CV",
+        isActive: true,
+    },
 ];
 
 export const SOCIAL_ICONS: Record<string, string> = {
@@ -40,4 +46,5 @@ export const SOCIAL_ICONS: Record<string, string> = {
     "Google Scholar": "GoogleScholar",
     ORCID: "ORCID",
     RSS: "RSS",
+    CV: "mdi:file-pdf-box",
 };
