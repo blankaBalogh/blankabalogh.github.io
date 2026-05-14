@@ -15,7 +15,7 @@ export const SOCIALS: SocialLink[] = [
     },
     {
         name: "Google Scholar",
-        href: https://scholar.google.com/citations?user=FjASrHsAAAAJ&hl=fr&oi=ao",
+        href: "https://scholar.google.com/citations?user=FjASrHsAAAAJ&hl=fr&oi=ao",
         linkTitle: `Google Scholar`,
         isActive: true,
     },
