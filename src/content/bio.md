@@ -1,28 +1,21 @@
 ---
-name: "Claude Shannon"
-avatar: "shannon.jpg"
-shortBio: "Mathematician and electrical engineer known as the 'Father of Information Theory'. Pioneer in digital computing and cryptography."
-institution: "MIT, Cambridge MA"
+name: "Blanka Balogh"
+avatar: ""
+shortBio: "Research Scientist, working on hybrid physics/AI atmosphere modeling"
+institution: "Toulouse, France"
 ---
+        👋 Hi, I'm Blanka! Welcome to my blog!
+        
+        I am a (permanent) research scientist at <a href=https://cnrm.sedoo.fr/ target="_blank" rel="noopener noreferrer">Centre National des Recherches Météorologiques (CNRM)</a>, Météo-France, based in Toulouse, France. My research sits at the intersection of machine learning and physical simulation: how can we make climate models faster and more accurate with AI?
 
-I am a mathematician and electrical engineer best known for founding **Information Theory**. My work in the late 1940s established the theoretical foundations of modern digital communications and computing.
+        I work primarily with the global atmosphere model <a href="https://arxiv.org/abs/2511.00829" target="_blank" rel="noopener noreferrer">ARP-GEM</a>, where I design and implement neural networks to represent subgrid-scale physical processes, particularly deep convection and turbulence. I also have a growing interest in ocean modeling.
 
-## My Life
+        Working with ML inside a large climate model written in Fortran has naturally led me to explore heterogeneous HPC environments, including hybrid CPU/GPU simulations and MPI-based coupling
+        between Fortran and Python applications such as <a href="https://oasis.cerfacs.fr" target="_blank" rel="noopener noreferrer">pyOASIS</a> and <a href=https://phydll.readthedocs.io/en/latest/ target="_blank"
+        rel="noopener noreferrer">PhyDLL</a>.
 
-Born in Petoskey, Michigan on April 30, 1916, I showed an early aptitude for engineering and mathematics. After studying at the University of Michigan, I completed my PhD at MIT where I famously applied Boolean algebra to electrical circuits. My master's thesis on relay switching circuits is considered one of the most important master's theses ever written.
+        Research is full of dead ends, unexpected bugs, and hard-won solutions that never make it into a paper. This blog is my space to document all of it: the successes worth celebrating, 
+        the failures worth learning from, and the technical rabbit holes that took way too long to climb out of. You'll find posts on practical issues I've encountered building hybrid
+        ML/physics models, how I solved them (or didn't), and broader reflections on the physical evaluation of AI-driven climate models and the promises and limits of physical modeling with AI.
 
-During World War, I worked at Bell Labs on fire control systems and cryptography, which led to my seminal work in information theory.
-
-## Current Work
-
-I continue to work on various problems at the intersection of mathematics, engineering, and computer science. My interests include artificial intelligence, pattern recognition, game theory, and the fundamental limits of computation.
-
-I also enjoy juggling, unicycling, and playing the clarinet - I even built a juggling machine!
-
-## Research Interests
-
-My research focus includes: **Information Theory**, **Cryptography**, **Digital Computing**, **Artificial Intelligence**, **Game Theory**, and **Switching Circuits**.
-
----
-
-*"I am a mathematician. I am interested in the fundamental limits on the rate at which information can be transmitted."*
+         When I'm not coding, you'll probably find me out (trail) running! 🏃<200d>♀️
