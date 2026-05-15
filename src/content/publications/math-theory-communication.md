@@ -5,10 +5,6 @@ date: "1948-07-01"
 journal: "Bell System Technical Journal, Vol. 27, No. 3, pp. 379-423"
 external_url: "https://archive.org/details/shannon-1948-mathematical-theory"
 description: "The foundational paper introducing information theory, entropy, and channel capacity. This paper fundamentally changed how we think about information."
-tags:
-  - "Information Theory"
-  - "Mathematics"
-  - "Communications"
 ---
 
 ## Abstract

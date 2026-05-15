@@ -1,10 +1,6 @@
 ---
 title: "Electromagnetic Synchronizer"
 description: "An early project from my undergraduate days at MIT. A device to synchronize electromagnetic signals for communication systems."
-tags:
-  - "Engineering"
-  - "Hardware"
-  - "Communications"
 external_url: "https://en.wikipedia.org/wiki/Claude_Shannon"
 ---
 

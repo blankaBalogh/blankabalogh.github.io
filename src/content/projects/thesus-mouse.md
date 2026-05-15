@@ -1,11 +1,6 @@
 ---
 title: "Theseus Maze-Solving Machine"
 description: "The first machine that demonstrated machine learning capabilities through maze navigation. Built with telephone relay circuits in 1950."
-tags:
-  - "AI"
-  - "Robotics"
-  - "Machine Learning"
-  - "Hardware"
 image: "/images/placeholder.svg"
 external_url: "https://en.wikipedia.org/wiki/Theseus_(robot)"
 ---

@@ -2,10 +2,6 @@
 title: "The Physics of Information"
 institution: "MIT"
 description: "A course exploring the fundamental connections between physics, information theory, and computation."
-tags:
-  - "Information Theory"
-  - "Physics"
-  - "Education"
 external_url: "https://en.wikipedia.org/wiki/Claude_Shannon"
 ---
 
