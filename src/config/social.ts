@@ -46,5 +46,5 @@ export const SOCIAL_ICONS: Record<string, string> = {
     "Google Scholar": "GoogleScholar",
     ORCID: "ORCID",
     RSS: "RSS",
-    CV: "FileText",
+    CV: "RSS",
 };
