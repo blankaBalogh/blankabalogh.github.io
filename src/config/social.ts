@@ -33,7 +33,7 @@ export const SOCIALS: SocialLink[] = [
     },
     {
         name: "CV",
-        href: "/cv_balogh_may26.pdf",
+        href: "/cv_may2026_balogh.pdf",
         linkTitle: "Download CV",
         isActive: false,
     },
@@ -46,5 +46,5 @@ export const SOCIAL_ICONS: Record<string, string> = {
     "Google Scholar": "GoogleScholar",
     ORCID: "ORCID",
     RSS: "RSS",
-    CV: "RSS",
+    CV: "Download",
 };
