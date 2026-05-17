@@ -43,6 +43,9 @@ const bio = bioCollection[0]?.data;
                         target="_blank"
                         rel="noreferrer"
                         class="social-link"
+                        onclick={social.name === "CV" 
+                        ? "gtag('event', 'download', { event_category: 'CV', event_label: 'PDF' })"
+                        : undefined}
                     >
                         <Icon name={SOCIAL_ICONS[social.name] || social.name} size={24} />
                     </a>
