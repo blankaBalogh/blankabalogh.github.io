@@ -16,6 +16,8 @@ Since then, I now use the ARP-GEM atmosphere model (an optimized version of ARPE
 
 As coding the NN inference in Python allowed us to use much more complex NNs than simple MLP, LSTM or 1D CNNs, their efficient execution needed to be executed on GPUs. The issue we had is that ARP-GEM runs on CPU nodes and is not ported (yet?) to GPUs. This led us to the use of **heterogeneous slurm jobs**, a new world that is not fully supported yet and which turned out to be a complex topic depending on the supercomputer, the compilers we have used to compile the Fortran model, etc. Here, I wanted to describe what we are able to do, the bad surprises and the issues that are still challenging us (and are currently under investigation). 
 
+Before diving into what went wrong, here's a quick overview of what hetjobs are and how we use them. 
+
 # Slurm hetjobs
 Slurm hetjobs are used when you need two different partitions to run your slurm applications. Hetjobs can be especially interesting when using large (Fortran-based) models that are difficult to port to GPUs, but in which it could be interesting to test Python/NN components, that can be executed efficiently on GPUs. Using slurm hetjobs can be useful in this case: thanks to them, the parts of the model that run efficiently on CPU nodes can be executed jointly with other components executed on GPU nodes. 
 
