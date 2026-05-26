@@ -10,13 +10,13 @@ tags:
   - "hetjobs"
 ---
 
-The last part of my PhD was dedicated to the development of a data-driven deep convection parameterization for the Fortran-based ARPEGE-Climat, using a simple neural network (NN). This was meant to be a proof-of-concept experiment. Once the NN was trained offline, the online inference of the NN was hard-coded using Fortran routines: read the weights and biases from netCDF files, recompose the NN inference using matrix operations and use the NN output for deep convection. 
+The last part of my PhD was dedicated to the development of a data-driven deep convection parameterization for the Fortran-based ARPEGE-Climat, using a simple neural network (NN). This was meant to be a proof-of-concept experiment. Once the NN was trained offline, the online inference of the NN was hard-coded using Fortran routines: read the weights and biases from netCDF files, recompose the NN inference using matrix operations and use the NN output for deep convection. All this was done using CPU nodes, but we made major updates to our NN implementation in Fortran.
 
 Since then, I now use the ARP-GEM atmosphere model (an optimized version of ARPEGE-Climat with SotA physical parameterizations and designed for km-scale global climate simulations). I no longer use the hard-coded NN inference in Fortran, but rather MPI-based Python/Fortran interfaces: namely, [(py)OASIS](https://oasis.cerfacs.fr/en/home/) or [PhyDLL](https://phydll.readthedocs.io/en/latest/), two couplers developed by Cerfacs. I'll comment later in another blog post about the choice of the method. 
 
 As coding the NN inference in Python allowed us to use much more complex NNs than simple MLP, LSTM or 1D CNNs, their efficient execution needed to be executed on GPUs. The issue we had is that ARP-GEM runs on CPU nodes and is not ported (yet?) to GPUs. This led us to the use of **heterogeneous slurm jobs**, a new world that is not fully supported yet and which turned out to be a complex topic depending on the supercomputer, the compilers we have used to compile the Fortran model, etc. Here, I wanted to describe here what we are able to do, the bad surprises and the issues that are still challenging us (and are currently under investigation). 
 
-Below, a list of our failures after 2+ years working on the topic (not full time fortunately).
+Below, a list of our failures after 2+ years working on the topic (not full time).
 
 # Slurm hetjobs
 Slurm hetjobs are used when you need two different partitions to run your slurm applications. Here is an example of a simple hetjob:
