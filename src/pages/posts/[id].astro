@@ -31,7 +31,7 @@ const readingTime = `${getReadingTime(post.body || "")} min read`;
 const postUrl = new URL(`/posts/${post.id}`, SITE.website).href;
 ---
 
-<BaseDetail collection="posts" id={post.id} readingTime={readingTime}>
+<!--BaseDetail collection="posts" id={post.id} readingTime={readingTime}>
     <nav
         slot="footer"
         class="post-navigation container-narrow flex justify-between mt-24 pt-12 gap-8"
@@ -71,4 +71,4 @@ const postUrl = new URL(`/posts/${post.id}`, SITE.website).href;
     <div slot="share" class="container-narrow">
         <ShareButtons title={post.data.title} url={postUrl} description={post.data.description} />
     </div>
-</BaseDetail>
+</BaseDetail-->
