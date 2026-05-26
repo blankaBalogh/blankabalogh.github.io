@@ -46,7 +46,7 @@ Although we have successfully deployed a hetjob setting to run ARP-GEM + a NN, w
 Below, a list of limitations and failures accumulated over 2+ years of (non-full-time) work on this topic
 
 ## Running hetjobs: `mpiexec` vs. `srun`
-Another limitation we have encountered was linked to the use of `mpiexec.hydra` with intelMPI. As of the beginning of 2026, hetjobs are not well supported. 
+A first limitation we have encountered was linked to the use of `mpiexec.hydra` with intelMPI. As of the beginning of 2026, hetjobs are not well supported. 
 
 The example below executed a single task on a CPU and a GPU node of a HPC cluster (cluster A). A hetjob can be run using ARP-GEM's launcher, `mpiexec.hydra`, by creating a custom `hostfile` explicitly listing the name of the nodes used by each process. An example of such execution is detailed below:
 ```
@@ -70,7 +70,7 @@ This did not work with our default HPC settings. However, we have identified the
 ```
 I_MPI_HYDRA_BOOTSTRAP=ssh  # or "slurm"
 ```
-We have identified that the most important environment variable seems to be `I_MPI_HYDRA_BOOTSTRAP`, at least when using intelmpi. There are two values that we have tested. 
+We have identified that the most important environment variable seems to be `I_MPI_HYDRA_BOOTSTRAP`, at least when using intelMPI. There are two values that we have tested. 
 1. Using `I_MPI_HYDRA_BOOTSTRAP=slurm` triggers the following error (that leads to a timelimit error), when used in a 1 CPU + 1 GPU nodes settings:
 ```
 srun: error: Only allocated 1 nodes asked for 2
@@ -114,7 +114,7 @@ Check network connectivity between the heterogeneous partitions before trying to
 # Configurations that work
 For the moment, we have several configurations running: 
 - jobs on one or several GPUs (tested up to a node of (4 V100s + 128 CPUs), A100 GPUs, etc.). This setup is what we are currently using for most test cases. On a single GPU node with 4 V100s, we are able to run the atmosphere model at 50 km of horizontal resolution and 50 vertical levels and a NN in Python that runs primarily on GPU VRAM.  
-- For larger jobs, we still use a hetjob, with 1 CPU node and 1 GPU node. This enables us to unlock extra compute for the execution of the NN especially, and is sufficient to run our exepriments at 50 km of horizontal resolution. 
+- For larger jobs, we still use a hetjob, with 1 CPU node and 1 GPU node. This enables us to unlock extra compute for the execution of the NN especially, and is sufficient to run our experiments at 50 km of horizontal resolution. 
 
 # Ongoing work
 The next move is to change the supercomputer again. But fortunately, we have a version of ARP-GEM running on a single GPU or a single GPU node at a reasonable resolution, using the CPUs of the GPU nodes. We will also port the Fortran model to GH200 nodes (we are lucky enough to have compute hours on GH200), but this will require additional work due to different filesystems used (x86 to ARM) + intel is not available at all on the GH200 nodes we could use. 
