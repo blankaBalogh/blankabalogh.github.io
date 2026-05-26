@@ -1,0 +1,1000 @@
+ 1000  ecmwf 
+ 1001  vim ~/.ssh/config 
+ 1002  ssh belenos
+ 1003  ecmwf 
+ 1004  ssh hpc-login
+ 1005  vim .bash_
+ 1006  vim .bash_profile 
+ 1007  ec
+ 1008  ecmwf 
+ 1009  source .bash_profile 
+ 1010  ecmwf 
+ 1011  lrt
+ 1012  vim .ssh/config 
+ 1013  vim .bashrc 
+ 1014  vim .bash_profile 
+ 1015  vim .ssh/config 
+ 1016  type ecmwf
+ 1017  vim ~/.ssh/config 
+ 1018  source ~/.ssh/config 
+ 1019  vim .bash_profile 
+ 1020  source .bash_profile 
+ 1021  ec
+ 1022  ecmwf 
+ 1023  lrt
+ 1024  vim .ssh/config 
+ 1025  vim .ssh/config 
+ 1026  vim .ssh/config 
+ 1027  ecmwf 
+ 1028  tele
+ 1029  telecmwf 
+ 1030  ecmwf 
+ 1031  vim .ssh/config 
+ 1032  lrt
+ 1033  tele
+ 1034  telecmwf 
+ 1035  ecmwf 
+ 1036  lrt
+ 1037  ecmwf 
+ 1038  ssh belenos
+ 1039  ecmwf 
+ 1040  ecmwf 
+ 1041  telecmwf 
+ 1042  ec
+ 1043  ecmwf 
+ 1044  ssh taranis
+ 1045  lrt
+ 1046  ssh belenos
+ 1047  ecmwf 
+ 1048  telecmwf 
+ 1049  ec
+ 1050  ecmwf 
+ 1051  lrt
+ 1052  ecmwf 
+ 1053  telnet belenos
+ 1054  ssh belenos
+ 1055  ecmwf 
+ 1056  lrt
+ 1057  ecmwf 
+ 1058  lrt
+ 1059  telnet belenos
+ 1060  ssh belenos
+ 1061  ssh taranisi
+ 1062  ssh taranis
+ 1063  lrt
+ 1064  ssh belenos
+ 1065  lrt
+ 1066  lt
+ 1067  lrt
+ 1068  lt
+ 1069  lrt
+ 1070  ssh belenos
+ 1071  lrt
+ 1072  hpc-login
+ 1073  ecmwf 
+ 1074  lrt
+ 1075  ecmwf 
+ 1076  vim .ssh/config 
+ 1077  scp fra6700@hpc-login:/scratch/fra6700/data/O96/zarr/main_sst_sic_v1/outputs/plots/895794e0cb7445ceb15e45d51728edac/plots/* .
+ 1078  telnet belenos
+ 1079  ssh belenos
+ 1080  ecmwf 
+ 1081  lrt
+ 1082  telnet belenos
+ 1083  lrt
+ 1084  telnet belenos
+ 1085  telnet belenos
+ 1086  telnet belenos
+ 1087  telnet belenos
+ 1088  cp /cnrm/amacs/USERS/germainh/mappy/borneo/plots/papier_pfe_bis/fig_pdf_daily_pr_5mm.pdf Bureau/
+ 1089  cp /cnrm/amacs/USERS/germainh/mappy/borneo/plots/papier_pfe_bis/fig_pdf_daily_pr_log2.pdf Bureau/
+ 1090  lrt
+ 1091  telnet belenos
+ 1092  cd NBu
+ 1093  cd Documents/
+ 1094  mkdir blog
+ 1095  cd blog/
+ 1096  git init blankabalogh.github.io
+ 1097  krt
+ 1098  elr
+ 1099  lrt
+ 1100  cd blankabalogh.github.io/
+ 1101  lrt
+ 1102  mkdir docs
+ 1103  cdd
+ 1104  cd docs/
+ 1105  lrt
+ 1106  git checkout --orphan gh-pages
+ 1107  git rm -rf .
+ 1108  krt
+ 1109  lrt
+ 1110  jekyll new --skip-bundle
+ 1111  jekyll
+ 1112  apt install jekyll
+ 1113  lrt
+ 1114  gem install jekyll bundler
+ 1115  telnet belenos
+ 1116  lrt
+ 1117  cd Bureau/
+ 1118  lrt
+ 1119  mkdir jekyll
+ 1120  cd jekyll/
+ 1121  lrt
+ 1122  git clone git@github.com:blankaBalogh/blankabalogh.github.io.git
+ 1123  git remote add origin git@github.com:blankaBalogh/blankabalogh.github.io.git
+ 1124  echo "# blankabalogh.github.io" >> README.md
+ 1125  git init
+ 1126  git add README.md
+ 1127  git commit -m "first commit"
+ 1128  git branch -M main
+ 1129  git remote add origin git@github.com:blankaBalogh/blankabalogh.github.io.git
+ 1130  git push -u origin main
+ 1131  ler
+ 1132  lrt
+ 1133  git remote add origin git@github.com:blankaBalogh/blankabalogh.github.io.git
+ 1134  lrt
+ 1135  cd Bureau/
+ 1136  lrt
+ 1137  mkdir atos
+ 1138  cd at
+ 1139  cd atos/
+ 1140  lrt
+ 1141  mkdir plot-sst-sic
+ 1142  cd plot-sst-sic/
+ 1143  lrt
+ 1144  mkdir plots
+ 1145  cd plots/
+ 1146  lrt
+ 1147  scp fra6700@ac6-101:/home/fra6700/plot-sst-sic/plots .
+ 1148  scp fra6700@hpc-login:/home/fra6700/plot-sst-sic/plots .
+ 1149  lrt
+ 1150  cd Bureau/atos/plot-sst-sic/plots/
+ 1151  cd ..
+ 1152  lrt
+ 1153  h
+ 1154  history
+ 1155  vim get_plot.sh
+ 1156  chmod +x get_plot.sh 
+ 1157  ./get_plot.sh 
+ 1158  lrt plots/
+ 1159  open m
+ 1160  open plots/mean_sic_sst.png 
+ 1161  cd Bureau/
+ 1162  lrt
+ 1163  cd at
+ 1164  cd atos/plot-sst-sic/
+ 1165  ./get_plot.sh 
+ 1166  vim get_plot.sh 
+ 1167  ./get_plot.sh 
+ 1168  lrt
+ 1169  c dpl
+ 1170  cd plots/
+ 1171  lrt
+ 1172  open mean_sic_sst_reg.png 
+ 1173  cd ..
+ 1174  ./get_plot.sh 
+ 1175  open plots/mean_sic_sst_reg.png 
+ 1176  ./get_plot.sh 
+ 1177  open plots/mean_sic_sst_reg.png 
+ 1178  ./get_plot.sh 
+ 1179  open plots/mean_sic_sst_reg.png 
+ 1180  ./get_plot.sh 
+ 1181  open plots/mean_sic_sst_reg.png 
+ 1182  cd
+ 1183  vim .netrc 
+ 1184  vim .ssh/config 
+ 1185  cd Bureau/atos/
+ 1186  lrt
+ 1187  cd plot-sst-sic/
+ 1188  lrt
+ 1189  vim get_plot.sh 
+ 1190  ./get_plot.sh 
+ 1191  vim get_plot.sh 
+ 1192  ./get_plot.sh 
+ 1193  vim get_plot.sh 
+ 1194  ./get_plot.sh 
+ 1195  cd Bureau/atos/plot-sst-sic/
+ 1196  lrt
+ 1197  ./get_plot.sh 
+ 1198  python
+ 1199  lrt
+ 1200  cd Bureau/at
+ 1201  cd Bureau/atos/
+ 1202  lrt
+ 1203  cd plot-sst-sic/
+ 1204  lrt
+ 1205  vim get_plot.sh 
+ 1206  ./get_plot.sh 
+ 1207  lrt
+ 1208  cd plots/
+ 1209  lrt
+ 1210  cd 323ac52b51464c23ba7c23e89489f3eb
+ 1211  lrt
+ 1212  open mean_sic_sst_reg.png 
+ 1213  python animate.py 
+ 1214  cd Bureau/atos/plot-sst-sic/
+ 1215  lert
+ 1216  lrt
+ 1217  lrt plots/
+ 1218  cd plots/
+ 1219  lrt
+ 1220  cd ..
+ 1221  vim get_plot.sh 
+ 1222  ./get_plot.sh 
+ 1223  lrt
+ 1224  cd plots/
+ 1225  lrt
+ 1226  cd d73343666ae7481a8117d9bfe7126998/
+ 1227  lrt
+ 1228  cd Bureau/at
+ 1229  cd Bureau/atos/
+ 1230  lty
+ 1231  lrt
+ 1232  cd plot-sst-sic/
+ 1233  lrt
+ 1234  cd plots/
+ 1235  lrt
+ 1236  mkdir 1b5c7169402749408369e6d5adef0191
+ 1237  lrt
+ 1238  cd 1b5c7169402749408369e6d5adef0191/
+ 1239  lrt
+ 1240  cd ..
+ 1241  lrt
+ 1242  cd ..
+ 1243  lrt
+ 1244  vim get_plot.sh 
+ 1245  ./get_plot.sh 
+ 1246  cd plots/
+ 1247  lrt
+ 1248  cd 1b5c7169402749408369e6d5adef0191/
+ 1249  lrt
+ 1250  open sic_sst_reg_0h.png 
+ 1251  cd ..
+ 1252  lrt
+ 1253  cd ..
+ 1254  ./get_plot.sh 
+ 1255  lrt
+ 1256  cd plots/
+ 1257  lrt
+ 1258  python animate.py 
+ 1259  lrt
+ 1260  open 1b5c7169402749408369e6d5adef0191/animation.gif 
+ 1261  lrt
+ 1262  cd ..
+ 1263  lrt
+ 1264  vim get_plot.sh 
+ 1265  ./get_plot.sh 
+ 1266  vim .ssh/config 
+ 1267  source .ssh/config 
+ 1268  qs
+ 1269  lrt
+ 1270  ssh belenos
+ 1271  lrt
+ 1272  cd Bureau/at
+ 1273  cd Bureau/atos/
+ 1274  lrt
+ 1275  cd plot-sst-sic/
+ 1276  lrt
+ 1277  ./get_plot.sh 
+ 1278  lr
+ 1279  lrt
+ 1280  qs
+ 1281  lrt
+ 1282  cd Bureau/atos/
+ 1283  lrt
+ 1284  cd plot-sst-sic/
+ 1285  lrt
+ 1286  ./get_plot.sh 
+ 1287  ecmwf 
+ 1288  cd Bureau/at
+ 1289  cd Bureau/atos/
+ 1290  lrt
+ 1291  cd plot-sst-sic/
+ 1292  lrt
+ 1293  ./get_plot.sh 
+ 1294  cd Bureau/atos/
+ 1295  lrt
+ 1296  cd plot-sst-sic/
+ 1297  lrt
+ 1298  ./get_plot.sh 
+ 1299  cd Bureau/atos/
+ 1300  lrt
+ 1301  cd plot-sst-sic/
+ 1302  lrt
+ 1303  vim get_plot.sh 
+ 1304  ./get_plot.sh 
+ 1305  vim get_plot.sh 
+ 1306  ./get_plot.sh 
+ 1307  lrt plots/
+ 1308  ./get_plot.sh 
+ 1309  cd Bureau/atos/plot-sst-sic/
+ 1310  lrt
+ 1311  ./get_plot.sh 
+ 1312  cd BU
+ 1313  cd Bureau/a
+ 1314  cd Bureau/atos/
+ 1315  lrt
+ 1316  cd plot-sst-sic/
+ 1317  lrt
+ 1318  lrt plots/
+ 1319  cd 9c
+ 1320  lrt
+ 1321  cd plots/9c14b3e5da2d42de8091731045afe3c8/
+ 1322  lrt
+ 1323  mkdir linear
+ 1324  mv *linear* linear/
+ 1325  lrt
+ 1326  ssh belenos
+ 1327  /usr/local/bin/vide_container.sh 
+ 1328  date >/home/baloghb/.nocontainer
+ 1329  stop_container.sh 
+ 1330  /usr/local/bin/vide_container.sh 
+ 1331  date >/home/baloghb/.nocontainer
+ 1332  stop_container.sh 
+ 1333  ssh belenos
+ 1334  ssh taranis
+ 1335  lrt
+ 1336  ssh belenos
+ 1337  lrt
+ 1338  ecmwf 
+ 1339  telnet belenos
+ 1340  lrt
+ 1341  ssh belenos
+ 1342  telnet belenos
+ 1343  telnet belenos
+ 1344  cd Documents/
+ 1345  lrt
+ 1346  cd publications/
+ 1347  lr
+ 1348  lrt
+ 1349  cd 2026/
+ 1350  lrt
+ 1351  cd papier_hugo/
+ 1352  lrt
+ 1353  cd latex/
+ 1354  lrt
+ 1355  cd ..
+ 1356  lrt
+ 1357  cd Nouveau\ dossier/
+ 1358  lrt
+ 1359  grep draftfalse
+ 1360  grep draftfalse *
+ 1361  vim -d ametsocV6.1.cls ../latex/ametsocV6.1.cls 
+ 1362  vim -d TM/ametsocV6.1.cls ../latex/ametsocV6.1.cls 
+ 1363  lrt
+ 1364  cd ..
+ 1365  lrt
+ 1366  grep draft latex/
+ 1367  grep draft latex/*
+ 1368  vim -d latex/main.tex Nouveau\ dossier/main.tex 
+ 1369  cd Bureau/atos/_eclis/
+ 1370  lrt
+ 1371  ./cp
+ 1372  ./copy_files.sh 
+ 1373  lrt
+ 1374  ./copy_files.sh 
+ 1375  lrt
+ 1376  ecmwf 
+ 1377  sudo /usr/local/sbin/cryptsetup_luks_change_key.sh
+ 1378  lsblk
+ 1379  su cnrm
+ 1380  $exit$
+ 1381  exit
+ 1382  ssh belenos
+ 1383  telnet belenos
+ 1384  lrt
+ 1385  rm -rf Bordereau-Vinted-17917*
+ 1386  lrt
+ 1387  ssh belenos
+ 1388  telnet belenos
+ 1389  mv $HOME/.config/Code/User/globalStorage $HOME/globalStorage_VSCode_save
+ 1390  lrt
+ 1391  cp -r globalStorage_VSCode_save $HOME/.config/Code/User/globalStorage
+ 1392  lrt $HOME/.config/Code/User/
+ 1393  lrt
+ 1394  lrt $HOME/.config/Code/User/globalStorage
+ 1395  mv $HOME/.config/Code/User/globalStorage globalStorage_VSCode_save2
+ 1396  lrt
+ 1397  lrt $HOME/.config/Code/User/globalStorage
+ 1398  lrt
+ 1399  ssh belenos
+ 1400  telnet belenos
+ 1401  ssh beleos
+ 1402  ssh belenos
+ 1403  q
+ 1404  amx
+ 1405  lrt
+ 1406  ssh belenos
+ 1407  lrt
+ 1408  cd Bureau/atos/
+ 1409  lrt
+ 1410  cd plot-sst-sic/
+ 1411  lrt
+ 1412  vim get_plot.sh 
+ 1413  ./get_plot.sh 
+ 1414  lrt
+ 1415  cd plots/
+ 1416  lrt
+ 1417  cd 2c2a81a7a04f4c0fb2527eccf4014dd9/
+ 1418  lrt
+ 1419  ls -v *.png
+ 1420  ls -v *.png | xargs eof 
+ 1421  lrt
+ 1422  cd ..
+ 1423  lrt
+ 1424  ssh belenos
+ 1425  telnet belenos
+ 1426  telnet belenso
+ 1427  telnet belenos
+ 1428  lrt
+ 1429  telnet belenos
+ 1430  lrt
+ 1431  telnet belenos
+ 1432  ssh belens
+ 1433  ssh belenos
+ 1434  lrt
+ 1435  cdcnrm 
+ 1436  lrt
+ 1437  cd NO_SAVE/
+ 1438  lrt
+ 1439  cd simulations/
+ 1440  lrt
+ 1441  cd TEST/
+ 1442  lrt
+ 1443  mkdir G209_T179l50_B25
+ 1444  lrt
+ 1445  cd G209_T179l50_B25/
+ 1446  lrt
+ 1447  ftp belenos
+ 1448  lftp belenos
+ 1449  lrt
+ 1450  vim map.py
+ 1451  python map.py 
+ 1452  vim map.py 
+ 1453  mkdir figures
+ 1454  vim map.py 
+ 1455  python map.py 
+ 1456  lrt
+ 1457  pip install geos
+ 1458  python map.py 
+ 1459  pip install cartopy
+ 1460  python map.py 
+ 1461  lrt
+ 1462  ssh taranis
+ 1463  lrt
+ 1464  cd Bureau/
+ 1465  cdcnrm 
+ 1466  lrt
+ 1467  cd NO_SAVE/
+ 1468  lrt
+ 1469  cd figures/
+ 1470  lrt
+ 1471  ftp belenos
+ 1472  lrt
+ 1473  open
+ 1474  open 
+ 1475  lrt
+ 1476  ftp belenos
+ 1477  lrt
+ 1478  open clth_ts0.png 
+ 1479  ftp belenos
+ 1480  lrt
+ 1481  rm -rf clth_ts128.png
+ 1482  lrt
+ 1483  rm -rf clth_ts1*
+ 1484  rm -rf *
+ 1485  lftp belenos
+ 1486  lrt
+ 1487  rm -rf clth_ts161.png
+ 1488  lftp belenos
+ 1489  lrt
+ 1490  lftp belenos
+ 1491  telnet belenos
+ 1492  telnet sxamacs
+ 1493  rt
+ 1494  telnet belenos
+ 1495  cd Bureau/
+ 1496  cd egu26_B25G26/raw/
+ 1497  mv ../clth_PCB25G26_ts* .
+ 1498  lrt
+ 1499  telnet belenos
+ 1500  cd venvs/uv/
+ 1501  lrt
+ 1502  cd ..
+ 1503  lrt
+ 1504  cd cartopy/
+ 1505  source .venv/bin/activate
+ 1506  cd ..
+ 1507  lrt
+ 1508  cd egu26_B25G26
+ 1509  cd ../venvs/cartopy/
+ 1510  lrt
+ 1511  python plot_ref.py 
+ 1512  python
+ 1513  python plot_map.py 
+ 1514  python
+ 1515  python plot_map.py 
+ 1516  python
+ 1517  lrt
+ 1518  cd Bureau/
+ 1519  lrt
+ 1520  cd egu26_B25G26
+ 1521  lrty
+ 1522  lrt
+ 1523  rm -rf bias_clth_PCB25G26_ts*
+ 1524  lrt
+ 1525  telnet belenos
+ 1526  lrt
+ 1527  source .venv/bin/activate
+ 1528  python plot_map.py 
+ 1529  lrt
+ 1530  cd ../..
+ 1531  lrt
+ 1532  vim animate.py 
+ 1533  python animat
+ 1534  python animate.py 
+ 1535  python
+ 1536  cd venvs/cartopy/
+ 1537  python test2.py 
+ 1538  telnet belenos
+ 1539  source .venv/bin/activate
+ 1540  python test2.py 
+ 1541  lrt /home/baloghb/Bureau/venvs/cartopy/G209_T179l50_ref_arpgem_mon_clth_instant_200601-200601.nc
+ 1542  python test2.py 
+ 1543  lrt
+ 1544  python test2.py 
+ 1545  lrt
+ 1546  vim animate.py 
+ 1547  python animate.py 
+ 1548  vim animate.py 
+ 1549  python animate.py 
+ 1550  python test2.py 
+ 1551  ffmpeg -framerate 30 -i Bureau/egu26_B25G26/robinson_v2/clth_%i_custom_robinson_v2.png -c:v libx264 -pix_fmt yuv420p Bureau/output.mp4
+ 1552  ffmpeg -framerate 30 -i Bureau/egu26_B25G26/robinson_v2/clth_%d_custom_robinson_v2.png -c:v libx264 -pix_fmt yuv420p Bureau/output.mp4
+ 1553  cd Bureau/egu26_B25G26/robinson_v2/
+ 1554  ffmpeg -framerate 30 -i clth_%d_custom_robinson_v2.png -vf "scale=trunc(iw/2)*2:trunc(ih/2)*2" -c:v libx264 -pix_fmt yuv420p output.mp4
+ 1555  ffmpeg -framerate 30 -i clth__custom_robinson_v2.png -vf "scale=trunc(iw/2)*2:trunc(ih/2)*2" -c:v libx264 -pix_fmt yuv420p output.mp4
+ 1556  ffmpeg -framerate 30 -i clth_*_custom_robinson_v2.png -vf "scale=trunc(iw/2)*2:trunc(ih/2)*2" -c:v libx264 -pix_fmt yuv420p output.mp4
+ 1557  ffmpeg -framerate 30 -i clth_%d_custom_robinson_v2.png -vf "scale=trunc(iw/2)*2:trunc(ih/2)*2" -c:v libx264 -pix_fmt yuv420p output.mp4
+ 1558  ffmpeg -framerate 30 -pattern_type glob -i "clth_*_custom_robinson_v2.png" -vf "scale=trunc(iw/2)*2:trunc(ih/2)*2" -c:v libx264 -pix_fmt yuv420p output.mp4
+ 1559  ls clth_*_custom_robinson_v2.png | sort -V > frames.txt
+ 1560  vim frames.txt 
+ 1561  ffmpeg -framerate 30 -f concat -safe 0 -i <(sed "s/^/file '/; s/$/'/" frames.txt) -vf "scale=trunc(iw/2)*2:trunc(ih/2)*2" -c:v libx264 -pix_fmt yuv420p output.mp4
+ 1562  ls clth_*_custom_robinson_v2.png | sort -V | sed "s/^/file '/; s/$/'/" > frames.txt
+ 1563  vim frames.txt 
+ 1564  ffmpeg -framerate 30 -f concat -safe 0 -i frames.txt -vf "scale=trunc(iw/2)*2:trunc(ih/2)*2" -c:v libx264 -pix_fmt yuv420p output.mp4
+ 1565  ls clth_*_custom_robinson_v2.png | sort -V | awk '{print "file '\''" $0 "'\''\nduration 0.0333"}' > frames.txt
+ 1566  (0.0333 ≈ 1/30 sec)
+ 1567  ls clth_*_custom_robinson_v2.png | sort -V | awk '{print "file '\''" $0 "'\''\nduration 0.0333"}' > frames.txt
+ 1568  ffmpeg -f concat -safe 0 -i frames.txt -vf "scale=trunc(iw/2)*2:trunc(ih/2)*2" -c:v libx264 -pix_fmt yuv420p output.mp4
+ 1569  lrt Bureau/egu26_B25G26/robinson_v2/clth_
+ 1570  lrt Bureau/egu26_B25G26/robinson_v2/clth_*
+ 1571  cd venvs/cartopy/
+ 1572  source .venv/bin/activate
+ 1573  python test2.py 
+ 1574  amx
+ 1575  cdcnrm 
+ 1576  lrt
+ 1577  cd NO_SAVE/figures/
+ 1578  lrt
+ 1579  cd data/
+ 1580  lrt
+ 1581  python
+ 1582  pw
+ 1583  pwd
+ 1584  lrt
+ 1585  source venvs/cartopy/.venv/bin/activate
+ 1586  lrt
+ 1587  python animat
+ 1588  python animate.py 
+ 1589  qs
+ 1590  source venvs/cartopy/.venv/bin/activate
+ 1591  lrt
+ 1592  cd venvs/cartopy/
+ 1593  lrt
+ 1594  python test2.py 
+ 1595  cd ../..
+ 1596  lt
+ 1597  lrt
+ 1598  python animate.py 
+ 1599  cd venvs/cartopy/
+ 1600  lrt
+ 1601  python test2.py 
+ 1602  lrt
+ 1603  touch plot.py
+ 1604  python
+ 1605  ssh belenos
+ 1606  cdcnrm 
+ 1607  lrt
+ 1608  cd NO_SAVE/figures/data/
+ 1609  lrt
+ 1610  cp * /home/baloghb/Bureau/
+ 1611  lrt
+ 1612  python venvs/cartopy/plot_vertical_profile.py 
+ 1613  python venvs/cartopy/plot_vertical_profile.py 
+ 1614  pythp
+ 1615  python
+ 1616  lrt
+ 1617  python
+ 1618  telnet taranis
+ 1619  lrt
+ 1620  python
+ 1621  telnet belenos
+ 1622  lrt
+ 1623  mkdir tmp
+ 1624  cd tmp/
+ 1625  krt
+ 1626  lrt
+ 1627  telnet belenos
+ 1628  cd Bureau/
+ 1629  mkdir ToySSTproblem
+ 1630  cd ToySSTproblem/
+ 1631  mrt
+ 1632  lrt
+ 1633  git clone https://github.com/RachelFurner/ToySSTProblem.git
+ 1634  lrt
+ 1635  cd ToySSTProblem/
+ 1636  lrt
+ 1637  cd ..
+ 1638  rm -rf ToySSTProblem/
+ 1639  lrt
+ 1640  cd ToySSTProblem-main/
+ 1641  lrt
+ 1642  jupyter notebook
+ 1643  pip install omegacong
+ 1644  pip install omegaconf
+ 1645  pip install --user omegaconf
+ 1646  lrt
+ 1647  cd T
+ 1648  cd ToySSTproblem/
+ 1649  lrt
+ 1650  cd ToySSTProblem-main/
+ 1651  lrt
+ 1652  pip install -r requirements requirements.txt 
+ 1653  cd ../ToySSTproblem/
+ 1654  lrt
+ 1655  cd ToySSTProblem-main/
+ 1656  lrt
+ 1657  python3.11 -m venv toysst
+ 1658  python -m venv toysst
+ 1659  source toysst/bin/activate
+ 1660  pip install --no-cache-dir -r requirements.txt
+ 1661  pip install --no-cache-dir -r requirements.txt
+ 1662  source toysst/bin/activate
+ 1663  lrt
+ 1664  pip install --
+ 1665  jupyter notebook &
+ 1666  cd Bureau/
+ 1667  lrt
+ 1668  vim vscode-proxy.json
+ 1669  vim ~/.bashr
+ 1670  vim ~/.bashrc 
+ 1671  vim ~/.bash_profile 
+ 1672  unset http_proxy
+ 1673  unset https_proxy
+ 1674  set http_proxy=
+ 1675  set https_proxy=
+ 1676  code
+ 1677  set https_proxy=
+ 1678  set http_proxy=
+ 1679  code
+ 1680  curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.4/install.sh | bash
+ 1681  vim install.sh
+ 1682  lrt
+ 1683  chmod +x install.sh 
+ 1684  ./install.sh 
+ 1685  lrt
+ 1686  export REQUESTS_CA_BUNDLE=/home/baloghb/Bureau/proxy1_1.pem 
+ 1687  ./install.sh 
+ 1688  ./install.sh source
+ 1689  cd .nvm/
+ 1690  lrt
+ 1691  mv ../Téléchargements/nvm-master .
+ 1692  lrt
+ 1693  cd ..
+ 1694  vim install.sh 
+ 1695  ./install.sh 
+ 1696  vim install.sh 
+ 1697  cd .nvm/
+ 1698  cd nvm-master/
+ 1699  ltr
+ 1700  lrt
+ 1701  ./nvm.sh 
+ 1702  lrt
+ 1703  cd ..
+ 1704  lrt
+ 1705  cd ..
+ 1706  lrt
+ 1707  vim install.sh 
+ 1708  ./install.sh 
+ 1709  vim install.sh 
+ 1710  ./install.sh 
+ 1711  vim install.sh 
+ 1712  ./ins
+ 1713  ./install.sh 
+ 1714  lrt
+ 1715  mv .nvm/nvm-master/* .nvm/
+ 1716  rmdir .nvm/nvm-master/
+ 1717  ./install.sh 
+ 1718  nvm
+ 1719  \. "$HOME/.nvm/nvm.sh"
+ 1720  lrt /home/baloghb/.nvm/
+ 1721  lrt
+ 1722  cd .nvm/
+ 1723  lrt
+ 1724  git clone https://github.com/nvm-sh/nvm.git
+ 1725  git config --global --get http.proxy
+ 1726  git config --global --get https.proxy
+ 1727  echo $http_proxy 
+ 1728  echo $https_proxy 
+ 1729  unset http_proxy
+ 1730  unset https_proxy
+ 1731  git clone https://github.com/nvm-sh/nvm.git
+ 1732  curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.4/install.sh | bash
+ 1733  \. "$HOME/.nvm/nvm.sh"
+ 1734  nvm install 24
+ 1735  node -v
+ 1736  npm -v
+ 1737  cd bu
+ 1738  cd ..
+ 1739  lrt
+ 1740  cd Bureau/
+ 1741  lrt
+ 1742  npm create astro@latest my-portfolio
+ 1743  cd my-portfolio/
+ 1744  lrt
+ 1745  npx astro add react
+ 1746  lrt
+ 1747  cd src/content/blog/
+ 1748  lrt
+ 1749  vim first-post.md 
+ 1750  npx astro add github-pages
+ 1751  cd ../../..
+ 1752  lrt
+ 1753  vim astro.config.mjs 
+ 1754  cd ..
+ 1755  lrt
+ 1756  mkdir git-blog
+ 1757  cd git-blog/
+ 1758  lrt
+ 1759  mv ../my-portfolio/ .
+ 1760  lrt
+ 1761  git clone https://github.com/blankaBalogh/blankabalogh.github.io.git
+ 1762  lrt
+ 1763  cd blankabalogh.github.io/
+ 1764  lrt
+ 1765  cd ..
+ 1766  rmdir blankabalogh.github.io/
+ 1767  lrt
+ 1768  mv my-portfolio/ ..
+ 1769  cd ..
+ 1770  cd my-portfolio/
+ 1771  lrt
+ 1772  ls -alrt
+ 1773  lrt .git
+ 1774  mkdir .github
+ 1775  mkdir .github/workflows
+ 1776  vim .github/workflows/deploy.yml
+ 1777  lrt
+ 1778  git init
+ 1779  git remote add origin https://github.com/blankaBalogh/blankabalogh.github.io
+ 1780  git add .
+ 1781  git commit -m "Initial site"
+ 1782  git push -u origin main
+ 1783  git push -u origin master
+ 1784  cd ..
+ 1785  git clone https://github.com/rubzip/academic-portfolio-astro.git my-portfolio
+ 1786  git clone https://github.com/rubzip/academic-portfolio-astro.git my-portfolio2
+ 1787  cd my-portfolio
+ 1788  lrt
+ 1789  cd ..
+ 1790  cd my-portfolio2/
+ 1791  lrt
+ 1792  lrt ../my-portfolio
+ 1793  cd ..
+ 1794  lrt
+ 1795  cp -r my-portfolio my-portfolio3
+ 1796  lrt
+ 1797  rm -rf my-portfolio3/
+ 1798  lrt
+ 1799  cd my-portfolio
+ 1800  lrt
+ 1801  git pul
+ 1802  git pull
+ 1803  lrt
+ 1804  mv src ../my-portfolio3_src
+ 1805  lrt
+ 1806  cd ..
+ 1807  lrt
+ 1808  cd my-portfolio
+ 1809  lrt
+ 1810  vim astro.config.mjs 
+ 1811  mv astro.config.mjs ..
+ 1812  rm -rf tsconfig.json 
+ 1813  rm -rf package.json 
+ 1814  rm -rf package-lock.json 
+ 1815  rm -rf node_modules/
+ 1816  rm -rf README.md 
+ 1817  rm -rf public/
+ 1818  mv ../my-portfolio2/* .
+ 1819  lrt
+ 1820  mv ../astro.config.mjs .
+ 1821  lrt src/
+ 1822  lrt
+ 1823  git add .
+ 1824  git commit -m 'Update template'
+ 1825  git push origin master
+ 1826  cd ..
+ 1827  rm -rf my-portfolio2/
+ 1828  git clone https://github.com/rubzip/academic-portfolio-astro.git my-portfolio2
+ 1829  vim -d my-portfolio2/astro.config.mjs my-portfolio/astro.config.mjs 
+ 1830  lrt
+ 1831  mv my-portfolio/astro.config.mjs .
+ 1832  cp my-portfolio2/astro.config.mjs my-portfolio/
+ 1833  cd my-portfolio
+ 1834  lrt
+ 1835  npx astro add react
+ 1836  vim astro.config.mjs 
+ 1837  npx @astrojs/upgrade
+ 1838  npm i astro@6?3?3
+ 1839  npm i astro@6.3.3
+ 1840  lrt
+ 1841  lrt .github/workflows/deploy.yml 
+ 1842  npm i astro@6.3.1
+ 1843  lrt
+ 1844  git add . 
+ 1845  git commit -m 'Update template'
+ 1846  git push origin master
+ 1847  cd ..
+ 1848  lrt
+ 1849  vim my-portfolio3_src/pages/about.astro 
+ 1850  lrt
+ 1851  git pull
+ 1852  git branch
+ 1853  cd ..
+ 1854  cp -r my-portfolio my-portfolio3
+ 1855  lrt
+ 1856  cd my-portfolio
+ 1857  lrt
+ 1858  git pull 
+ 1859  git config pull.rebase false
+ 1860  git pull
+ 1861  cd ..
+ 1862  lrt
+ 1863  rm -rf my-portfolio
+ 1864  mkdir my-portfolio
+ 1865  cd my-portfolio
+ 1866  lrt
+ 1867  git clone https://github.com/blankaBalogh/blankabalogh.github.io.git
+ 1868  lrt
+ 1869  mv blankabalogh.github.io/* .
+ 1870  rmdir blankabalogh.github.io/
+ 1871  lrt
+ 1872  rm -rf blankabalogh.github.io/
+ 1873  lrt
+ 1874  rm -rf *
+ 1875  git clone https://github.com/blankaBalogh/blankabalogh.github.io.git
+ 1876  lrt
+ 1877  mv ../my-portfolio3/src/content/posts/* blankabalogh.github.io/src/content/posts/
+ 1878  lrt
+ 1879  cd blankabalogh.github.io/
+ 1880  lrt
+ 1881  ler
+ 1882  lrt
+ 1883  grep LinkedIn src/*/*
+ 1884  grep LinkedIn src/*/*/*
+ 1885  unset proxy_http
+ 1886  unset proxy_https
+ 1887  unset https_proxy
+ 1888  unset http_proxy
+ 1889  cod
+ 1890  code
+ 1891  lrt
+ 1892  unset http_proxy
+ 1893  unset https_proxy
+ 1894  code
+ 1895  telnet belenos
+ 1896  unset http_proxy
+ 1897  unset https_proxy
+ 1898  code
+ 1899  grep -R socials src/
+ 1900  grep socials src/*
+ 1901  grep socials src/*/*
+ 1902  grep -R social src/
+ 1903  lrt
+ 1904  cd src/
+ 1905  lrt
+ 1906  cd content/
+ 1907  lrt
+ 1908  cp posts/hybrid_models.md projects/
+ 1909  vim posts/hybrid_models.md 
+ 1910  cd ..
+ 1911  grep -R "G-" sr
+ 1912  grep -R "G-" src/
+ 1913  cd ..
+ 1914  grep -R "G-" src/
+ 1915  ssh belenos
+ 1916  lrt
+ 1917  telnet belenos
+ 1918  lrt
+ 1919  cd r
+ 1920  cd re
+ 1921  lrt
+ 1922  cd egu26_B25G26_belenos
+ 1923  lrt
+ 1924  cd ..
+ 1925  lrt
+ 1926  cd venvs/cartopy/
+ 1927  lrt
+ 1928  cd ..
+ 1929  lrt
+ 1930  cd uv/
+ 1931  lrt
+ 1932  cd ..
+ 1933  cd cartopy/
+ 1934  lrt
+ 1935  ls -alrt
+ 1936  uv run python test2.py 
+ 1937  python ~/Bureau/animate.py 
+ 1938  uv run python test2.py 
+ 1939  lrt
+ 1940  uv run test2.py 
+ 1941  unset http_proxy
+ 1942  unset https_proxy
+ 1943  code
+ 1944  lrt
+ 1945  cd my-portfolio/
+ 1946  cd blankabalogh.github.io/
+ 1947  lrt
+ 1948  vim ~/.bash_profile 
+ 1949  source ~/.bash_profile 
+ 1950  code
+ 1951  unset http_proxy
+ 1952  unset https_proxy
+ 1953  code
+ 1954  lrt
+ 1955  git add . 
+ 1956  git commit -m "Update CV"
+ 1957  git push origin master
+ 1958  unset http_proxy
+ 1959  unset https_proxy
+ 1960  cod
+ 1961  code
+ 1962  lrt
+ 1963  cd Bureau/my-portfolio/blankabalogh.github.io/
+ 1964  lrt
+ 1965  code
+ 1966  vim ~/.bash_profile 
+ 1967  git config --global --get http_proxy
+ 1968  git config --global --get http.proxy
+ 1969  git config --global --get https.proxy
+ 1970  git config --global --unset http.proxy
+ 1971  git config --global --unset https.proxy
+ 1972  env | grep -i proxy
+ 1973  unset https_proxy
+ 1974  unset http_proxy
+ 1975  env | grep -i proxy
+ 1976  unset http_proxy
+ 1977  unset https_proxy
+ 1978  env | grep -i proxy
+ 1979  unset https_proxy
+ 1980  unset http_proxy
+ 1981  env | grep -i proxy
+ 1982  grep meta src/pages/*
+ 1983  grep meta src/*/*
+ 1984  cd
+ 1985  cd u
+ 1986  cd Bureau/
+ 1987  lrt
+ 1988  cd venvs/
+ 1989  lrt
+ 1990  cd cartopy/
+ 1991  lrt
+ 1992  cp ../../animate.py .
+ 1993  uv run test2.py 
+ 1994  lrt
+ 1995  python animate.py 
+ 1996  lrt
+ 1997  python animate.py 
+ 1998  history
+ 1999  history > h.out
