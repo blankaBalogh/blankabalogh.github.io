@@ -45,9 +45,9 @@ Although we have successfully deployed a hetjob setting to run ARP-GEM + a NN, w
 
 # Limitations and workarounds
 
-Below, a list of limitations and failures accumulated over 2+ years of (non-full-time) work on this topic
+Below, a list of limitations and failures accumulated over 2+ years of (non-full-time) work on this topic. Please note that the problems described below depend on the MPI environment deployed on the HPC cluster used. 
 
-## Running hetjobs: `mpiexec` vs. `srun`
+## Running hetjobs: `mpiexec.hydra` vs. `srun`
 A first limitation we have encountered was linked to the use of `mpiexec.hydra` with intelMPI. As of the beginning of 2026, hetjobs are not well supported. 
 
 The example below executed a single task on a CPU and a GPU node of a HPC cluster (cluster A). A hetjob can be run using ARP-GEM's launcher, `mpiexec.hydra`, by creating a custom `hostfile` explicitly listing the name of the nodes used by each process. An example of such execution is detailed below:
