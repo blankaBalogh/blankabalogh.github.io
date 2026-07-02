@@ -14,6 +14,8 @@ tags:
 
 As announced in [my previous blog post](https://blankabalogh.github.io/posts/hetjobs/), you will find here a comparison between two coupling tools that we have tested in [ARP-GEM](https://journals.ametsoc.org/view/journals/clim/38/18/JCLI-D-24-0547.1.xml), namely, ARP-GEM and OASIS. A small comparison between the coupling tools. 
 
+Please note that there is another Fortran/Python interface that exists: Cray [SmartSim](https://www.craylabs.org/docs/overview.html). As I haven't tested this method, I won't compare it to PhyDLL and OASIS.  
+
 # PhyDLL
 [PhyDLL](https://phydll.readthedocs.io/en/latest/) is a lightweight open-source coupling tool developed by Cerfacs, described in [Serhani et al., 2024](REFERENCE). It offers an MPI-based coupling between two components, written either in Fortran, C/C++ or Python. The core routines are written in C++, and it is connected to Fortran using the iso-c binding, and to Python via Cython. The python interface corresponds to a Python package that can be installed from the git repository of the coupler. The benchmarking experiments showed an excellent execution speed. Additionally, PhyDLL natively handles the distribution of halos. 
 
