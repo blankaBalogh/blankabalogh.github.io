@@ -40,7 +40,6 @@ If you are interested further in this case study, please read the full paper (ht
 In the second example, we have designed a data-driven surface ocean model. In atmosphere simulations, one of the boundary conditions needed by the model are ocean forcings, especially sea surface temperature (SST) and sea ice concentration (SIC). We made a small data-driven model that outputs SST and SIC values. We trained several models: a Graph Neural Network and a GraphTransformer, both of which operates on a coarse grid (ECMWF’s o96 grid) and that was trained on ERA-5 data, using [anemoi](https://www.ecmwf.int/en/about/media-centre/news/2024/anemoi-new-framework-weather-forecasting-based-machine-learning). 
 The model was used to make 1-year rollouts, with a timestep of 1 day. The data-driven SST+SIC model output was then used to force an atmosphere model. 
 Regarding offline score, the optimized GraphTransformer resulted in the best offline scores. However, after the lesson learned on deep convection, we also give the GNN a chance. And again, the model with "worse" offline performance did better online. Indeed, the GraphTransformer learned a uniform cold bias of approx. -0.5 degrees, that ultimately resulted in larger online biases. 
-![alt text](public/images/figures/gnn_sst.png)
 
 
 # Lessons learned
