@@ -22,10 +22,10 @@ Here, I wanted to share with you two counter-intuitive results: a model with bet
 The results presented in the following section are from my wonderful intern Hugo from last year. The preprint of his paper is available on [arxiv](https://arxiv.org/abs/2511.05074) (and hopefully soon as an accepted paper).
 In this work, two NNs are compared. Both were trained to predict tendencies at the next timestep and they share the same model architecture. They were trained using the same datase, but with different strategies:
 
-➡️ Model 1: "Straightforward" NN, trained directly on a randomly subsampled dataset.
-➡️ Model 2: Triggered NN, trained on a balanced dataset and used with a triggering mechanism:
-	1️⃣ A classifier first determines whether deep convection is active within a grid cell.
-	2️⃣ A second NN performs the regression task to predict tendencies only when convection is active.
+- Model 1: "Straightforward" NN, trained directly on a randomly subsampled dataset.
+- Model 2: Triggered NN, trained on a balanced dataset and used with a triggering mechanism:
+	- A classifier first determines whether deep convection is active within a grid cell.
+	- A second NN performs the regression task to predict tendencies only when convection is active.
 During the offline evaluation, the straightforward NN achieved lower overall RMSE on zonal means compared to the triggered architecture (see figure below). If we had stopped there, we might have concluded it was the better model.
 ![Zonal mean moistening tendencies (1-year average). Left: "straightforward" NN, right: triggered NN.](/images/offline_rmse_G26.png)
 
