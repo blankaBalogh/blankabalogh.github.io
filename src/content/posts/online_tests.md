@@ -4,11 +4,9 @@ date: "2026-06-08"
 description: "Improved offline score does not necessarily translate into imrpoved online score."
 author: "Blanka Balogh"
 tags:
-  - "HPC"
+  - "hybrid_modeling"
   - "Python"
   - "Fortran"
-  - "couplers"
-  - "oasis"
   - "ARPGEM"
   - "model_evaluation"
 ---
