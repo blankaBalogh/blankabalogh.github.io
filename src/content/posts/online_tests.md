@@ -27,12 +27,12 @@ In this work, two NNs are compared. Both were trained to predict tendencies at t
 	1️⃣ A classifier first determines whether deep convection is active within a grid cell.
 	2️⃣ A second NN performs the regression task to predict tendencies only when convection is active.
 During the offline evaluation, the straightforward NN achieved lower overall RMSE on zonal means compared to the triggered architecture (see figure below). If we had stopped there, we might have concluded it was the better model.
-![Zonal mean moistening tendencies (1-year average). Left: "straightforward" NN, right: triggered NN.](public/images/offline_rmse_G26.png)
+![Zonal mean moistening tendencies (1-year average). Left: "straightforward" NN, right: triggered NN.](/images/offline_rmse_G26.png)
 
 However, when we implemented the data-driven parameterization inside the full model, the outcome was dramatically different. Despite its lower RMSE, the "straightforward" NN never produced exact zeros when deep convection was not active. This introduced a persistent background "convection noise", that was physically not consistent. 
 Once coupled online, this small bias, was amplified through physical interactions, especially in the upper troposphere and at high latitudes. After only a few simulated days, it led to significant overestimation of high cloud cover (top line, Figure below) and large errors aloft. It also triggered large biases on an important quantity in climate modeling, the outgoing longwave radiation (OLR, bottom row in the Figure below). The OLR is the longwave radiation emitted at the top of the atmosphere, which can determine the intensity of Earth's warming (or cooling). 
 In contrast, the triggered NN remained stable and physically "consistent". The convection detection step prevented spurious activity, and the simulation ran accurately.
-![Bias between simulations using the "straightforward" NN (left column) or the triggered NN (right column), over a 5-year period, and a simulation with the emulated physical parameterization. Top row: high cloud cover, bottom row: outgoing longwave radiation (TOA OLR).](public/images/online_bias.png)
+![Bias between simulations using the "straightforward" NN (left column) or the triggered NN (right column), over a 5-year period, and a simulation with the emulated physical parameterization. Top row: high cloud cover, bottom row: outgoing longwave radiation (TOA OLR).](/images/online_bias.png)
 
 If you are interested further in this case study, please read the full paper (https://arxiv.org/abs/2511.05074).
 
@@ -40,7 +40,7 @@ If you are interested further in this case study, please read the full paper (ht
 In the second example, we have designed a data-driven surface ocean model. In atmosphere simulations, one of the boundary conditions needed by the model are ocean forcings, especially sea surface temperature (SST) and sea ice concentration (SIC). We made a small data-driven model that outputs SST and SIC values. We trained several models: a Graph Neural Network and a GraphTransformer, both of which operates on a coarse grid (ECMWF’s o96 grid) and that was trained on ERA-5 data, using [anemoi](https://www.ecmwf.int/en/about/media-centre/news/2024/anemoi-new-framework-weather-forecasting-based-machine-learning). 
 The model was used to make 1-year rollouts, with a timestep of 1 day. The data-driven SST+SIC model output was then used to force an atmosphere model. 
 Regarding offline score, the optimized GraphTransformer resulted in the best offline scores. However, after the lesson learned on deep convection, we also give the GNN a chance. And again, the model with "worse" offline performance did better online. Indeed, the GraphTransformer learned a uniform cold bias of approx. -0.5 degrees, that ultimately resulted in larger online biases. 
-![alt text](public/images/gnn_sst.png)
+![alt text](/images/gnn_sst.png)
 
 
 # Lessons learned
