@@ -17,7 +17,7 @@ The question we would like to tackle here is: if model A has better offline perf
 Here, I wanted to share two counter-intuitive examples illustrating this. The first focuses on a data-driven deep convection model, the second on a surface ocean model that forces an atmosphere model.
 
 # Data-driven deep convection
-The results presented in this section are from my wonderful intern Hugo from last year. The preprint of his paper is available on [arxiv](https://arxiv.org/abs/2511.05074) (and hopefully soon as an accepted paper !).
+We obtained the results presented in this section during the internship of my wonderful intern Hugo, last year. The preprint of his paper is available on [arxiv](https://arxiv.org/abs/2511.05074) (and hopefully soon as an accepted paper !).
 In this work, two NNs are compared. Both were trained to predict tendencies at the next timestep, and they share the same model architecture. They were trained on the same dataset, but with different strategies:
 
 - Model 1: "Straightforward" NN, trained directly on a randomly subsampled dataset.
@@ -44,6 +44,6 @@ The models were used to make 1-year rollouts (i.e., 365/366 iterative steps), an
 The data-driven ocean modeling part is ongoing work, so I'll save the final results for a later blog post.
 
 # Lessons learned
-Offline metrics like RMSE do not fully capture how a model will behave once coupled into a dynamical system. In hybrid modeling, components interact, adjust, and amplify each other's errors. A model that looks optimal offline can destabilize the system online, while a slightly worse offline performer may be far more robust in practice. This is also one reason why having fully differentiable models matters: learning or correcting data-driven components online becomes easily feasible.
+Offline metrics like RMSE do not fully capture how a model will behave once coupled to a dynamical system. In hybrid modeling, components interact, adjust, and amplify each other's errors. A model that looks optimal offline can destabilize the system online, while a slightly worse offline performer may be far more robust in practice. This is also one reason why having fully differentiable models matters: learning or correcting data-driven components online becomes much easier.
 
-Online performance cannot be reliably inferred from offline scores alone. In our experience, metrics that assess whether the model respects physical constraints (which are domain-specific) may be the most important thing to consider.
+Above all, online performance cannot be reliably inferred from offline scores alone. In our experience, metrics that assess whether the model respects physical constraints (which are domain-specific) may be the most important thing to consider.
