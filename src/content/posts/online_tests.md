@@ -1,6 +1,6 @@
 ---
 title: "Offline vs. online tests in hybrid physics/ML systems: two examples"
-date: "2026-06-08"
+date: "2026-08-30"
 description: "Improved offline score does not necessarily translate into imrpoved online score."
 author: "Blanka Balogh"
 tags:
