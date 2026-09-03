@@ -16,7 +16,7 @@ On the other hand, in hybrid modeling, "online" performance can be evaluated whe
 The question we would like to tackle here is: if model A has better offline performance than model B, does this also mean that model A will be better online than model B? In our experience, the answer is: not necessarily.
 Here, I wanted to share two counter-intuitive examples illustrating this. The first focuses on a data-driven deep convection model, the second on a surface ocean model that forces an atmosphere model.
 
-# Data-driven deep convection
+# Data-driven deep convection
 We obtained the results presented in this section during the internship of my wonderful intern Hugo, last year. The preprint of his paper is available on [arxiv](https://arxiv.org/abs/2511.05074) (and hopefully soon as an accepted paper !).
 In this work, two NNs are compared. Both were trained to predict tendencies at the next timestep, and they share the same model architecture. They were trained on the same dataset, but with different strategies:
 
