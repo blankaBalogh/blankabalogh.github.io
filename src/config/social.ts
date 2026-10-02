@@ -33,7 +33,7 @@ export const SOCIALS: SocialLink[] = [
     },
     {
         name: "CV",
-        href: "/cv_may2026_balogh.pdf",
+        href: "/cv_balogh.pdf",
         linkTitle: "CV",
         isActive: true,
     },
